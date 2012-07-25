@@ -1,0 +1,31 @@
+.content-top {
+	background-color: green;
+	height: 50px;
+}
+
+.content-top .header {
+	
+}
+
+.content-top .header h1 {
+	width: 100px;
+}
+
+.content-top .header .option-bar {
+	
+}
+
+.content-top .header .action-btn {
+	margin-right: 10px;
+	float: right;
+}
+
+.content-left {
+	background-color: blue;
+	max-height: 500px;
+}
+
+.content-main {
+	background-color: gray;
+	max-height: 500px;
+}

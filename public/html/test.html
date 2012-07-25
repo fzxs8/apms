@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="../javascripts/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<a class="btn" data-toggle="modal" href="#myModal">点击触发对话框</a>
+	<a class="btn btn-primary" data-toggle="modal" data-target="#myModal"
+		data-keyboard="false" data-backdrop="false">点击"无ESC关闭，无遮蔽背景"演示</a>
+
+	<div id="myModal" class="modal hide fade">
+		<div class="modal-header">
+			<a class="close" data-dismiss="modal">×</a>
+			<h3>对话框标题</h3>
+		</div>
+		<div class="modal-body">
+			<p>对话框内容</p>
+		</div>
+		<div class="modal-footer">
+			<a href="#" class="btn">关闭</a> <a href="#" class="btn btn-primary">保存更新</a>
+		</div>
+	</div>
+
+</body>
+</html>
