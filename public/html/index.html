@@ -14,7 +14,9 @@
 		<div class="content-top">
 			<div class="header">
 				<div class="row">
-					<div class='span1'>head</div>
+					<div class='span1 site-logo'>
+						<img src="../images/missing.png" width="147" height="26">
+					</div>
 
 					<div class="controls  span4 search-box">
 						<div class="input-append">
@@ -34,14 +36,13 @@
 					<div class="btn-group  span1 action-btn">
 						<button class="btn btn-primary dropdown-toggle"
 							data-toggle="dropdown">
-							动作 <span class="caret"></span>
+							李强<span class="caret"></span>
 						</button>
 						<ul class="dropdown-menu">
 							<li><a href="#">设置</a></li>
-							<li><a href="#">其他动作</a></li>
-							<li><a href="#">其他</a></li>
+							<li><a href="#">修改密码</a></li>
 							<li class="divider"></li>
-							<li><a href="#">被间隔的链接</a></li>
+							<li><a href="#">退出</a></li>
 						</ul>
 					</div>
 				</div>
@@ -49,8 +50,52 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span12">
-				<div class="span2 content-left ">1111</div>
-				<div class="span10 content-main">2222</div>
+				<div class="span2 content-left ">
+					<div class="accordion" id="accordion2">
+						<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle" data-toggle="collapse"
+									data-parent="#accordion2" href="#collapseOne"> 应用 </a>
+							</div>
+							<div id="collapseOne" class="accordion-body in"
+								style="height: auto;">
+								<div class="accordion-inner">
+									<ul class="nav nav-pills">
+										<li class="active"><a href="#">最新动态</a></li>
+										<li><a href="#">所有任务</a></li>
+										<li><a href="#">我的日程</a></li>
+										<li><a href="#">最新状况</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle" data-toggle="collapse"
+									data-parent="#accordion2" href="#collapseTwo"> 项目 </a>
+							</div>
+							<div id="collapseTwo" class="accordion-body collapse"
+								style="height: 0px;">
+								<div class="accordion-inner">222</div>
+							</div>
+						</div>
+						<div class="accordion-group">
+							<div class="accordion-heading">
+								<a class="accordion-toggle" data-toggle="collapse"
+									data-parent="#accordion2" href="#collapseThree"> 其他 </a>
+							</div>
+							<div id="collapseThree" class="accordion-body collapse"
+								style="height: 0px;">
+								<div class="accordion-inner">111</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span10 content-main">
+					<div class="nav-bar">我的任务</div>
+					<div class="content-area">2222</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -1,10 +1,15 @@
 .content-top {
-	background-color: green;
-	height: 50px;
+	margin-top: 20px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
 }
 
 .content-top .header {
 	
+}
+
+.content-top  .site-logo {
+	width: 150px
 }
 
 .content-top .header h1 {
@@ -21,11 +26,23 @@
 }
 
 .content-left {
-	background-color: blue;
 	max-height: 500px;
 }
 
 .content-main {
-	background-color: gray;
 	max-height: 500px;
+}
+
+.content-main .nav-bar {
+	margin-bottom: 2px;
+	border: 1px solid #E5E5E5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 8px 15px;
+}
+
+.content-main .content-area {
+	background-image: url("../images/wood_pattern.jpg");
+	height: 55	0px;
 }
