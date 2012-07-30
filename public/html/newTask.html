@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="span8">
+		<form class="form-horizontal">
+			<fieldset>
+				<legend>Bootstrap支持的控件</legend>
+				<div class="control-group">
+					<label class="control-label" for="input01">文本输入框</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" id="input01">
+						<p class="help-block">除了文本域之外，任何HTML5输入框都是该样式</p>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="optionsCheckbox">复选框</label>
+					<div class="controls">
+						<label class="checkbox"> <input type="checkbox"
+							id="optionsCheckbox" value="option1"> 选择异或不许—使用时最好给出选择的理由
+						</label>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="select01">选择框</label>
+					<div class="controls">
+						<select id="select01">
+							<option>请选择</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="multiSelect">复选框</label>
+					<div class="controls">
+						<select multiple="multiple" id="multiSelect">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="fileInput">上传框</label>
+					<div class="controls">
+						<input class="input-file" id="fileInput" type="file">
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="textarea">文本域</label>
+					<div class="controls">
+						<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+					</div>
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary">保存更改</button>
+					<button class="btn">取消</button>
+				</div>
+			</fieldset>
+		</form>
+		<h3>标记的例子</h3>
+		<p>
+			根据上面的例子，这里将展示如何标记一个控件组。 需要用到
+			<code>.control-group</code>
+			,
+			<code>.control-label</code>
+			, 和
+			<code>.controls</code>
+			类。
+		</p>
+		<pre class="prettyprint linenums">
+			<ol class="linenums">
+				<li class="L0"><span class="tag">&lt;form</span><span
+					class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span
+					class="atv">"form-horizontal"</span><span class="tag">&gt;</span></li>
+				<li class="L1"><span class="pln">  </span><span class="tag">&lt;fieldset&gt;</span></li>
+				<li class="L2"><span class="pln">    </span><span class="tag">&lt;legend&gt;</span><span
+					class="pln">完善资料</span><span class="tag">&lt;/legend&gt;</span></li>
+				<li class="L3"><span class="pln">    </span><span class="tag">&lt;div</span><span
+					class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span
+					class="atv">"control-group"</span><span class="tag">&gt;</span></li>
+				<li class="L4"><span class="pln">      </span><span class="tag">&lt;label</span><span
+					class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span
+					class="atv">"control-label"</span><span class="pln"> </span><span
+					class="atn">for</span><span class="pun">=</span><span class="atv">"input01"</span><span
+					class="tag">&gt;</span><span class="pln">您的尊姓大名</span><span
+					class="tag">&lt;/label&gt;</span></li>
+				<li class="L5"><span class="pln">      </span><span class="tag">&lt;div</span><span
+					class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span
+					class="atv">"controls"</span><span class="tag">&gt;</span></li>
+				<li class="L6"><span class="pln">        </span><span
+					class="tag">&lt;input</span><span class="pln"> </span><span
+					class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span
+					class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span
+					class="atv">"input-xlarge"</span><span class="pln"> </span><span
+					class="atn">id</span><span class="pun">=</span><span class="atv">"input01"</span><span
+					class="tag">&gt;</span></li>
+				<li class="L7"><span class="pln">        </span><span
+					class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span
+					class="pun">=</span><span class="atv">"help-block"</span><span
+					class="tag">&gt;</span><span class="pln">字母，数字，汉字皆可</span><span
+					class="tag">&lt;/p&gt;</span></li>
+				<li class="L8"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li>
+				<li class="L9"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li>
+				<li class="L0"><span class="pln">    </span><span class="tag">&lt;div</span><span
+					class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span
+					class="atv">"control-group"</span><span class="tag">&gt;</span></li>
+				<li class="L1"><span class="pln">      </span><span class="tag">&lt;label</span><span
+					class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span
+					class="atv">"control-label"</span><span class="pln"> </span><span
+					class="atn">for</span><span class="pun">=</span><span class="atv">"input01"</span><span
+					class="tag">&gt;</span><span class="pln">您的twitter网址</span><span
+					class="tag">&lt;/label&gt;</span></li>
+				<li class="L2"><span class="pln">      </span><span class="tag">&lt;div</span><span
+					class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span
+					class="atv">"controls"</span><span class="tag">&gt;</span></li>
+				<li class="L3"><span class="pln">        </span><span
+					class="tag">&lt;input</span><span class="pln"> </span><span
+					class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span
+					class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span
+					class="atv">"input-xlarge"</span><span class="pln"> </span><span
+					class="atn">id</span><span class="pun">=</span><span class="atv">"input01"</span><span
+					class="tag">&gt;</span></li>
+				<li class="L4"><span class="pln">        </span><span
+					class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span
+					class="pun">=</span><span class="atv">"help-block"</span><span
+					class="tag">&gt;</span><span class="pln">请输入您的twitter网址，以便我们收录</span><span
+					class="tag">&lt;/p&gt;</span></li>
+				<li class="L5"><span class="pln">      </span><span class="tag">&lt;/div&gt;</span></li>
+				<li class="L6"><span class="pln">    </span><span class="tag">&lt;/div&gt;</span></li>
+				<li class="L7"><span class="pln">  </span><span class="tag">&lt;/fieldset&gt;</span></li>
+				<li class="L8"><span class="tag">&lt;/form&gt;</span></li>
+			</ol>
+		</pre>
+
+		<form class="form-horizontal">
+			<fieldset>
+				<legend>完善资料</legend>
+				<div class="control-group">
+					<label class="control-label" for="input01">您的尊姓大名</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" id="input01">
+						<p class="help-block">字母，数字，汉字皆可</p>
+					</div>
+				</div>
+
+				<div class="control-group">
+					<label class="control-label" for="input01">您的twitter网址</label>
+					<div class="controls">
+						<input type="text" class="input-xlarge" id="input01">
+						<p class="help-block">请输入您的twitter网址，以便我们收录</p>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+
+	</div>
+</body>
+</html>

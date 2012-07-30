@@ -27,6 +27,7 @@
 
 .content-left {
 	max-height: 500px;
+	width: 300px;
 }
 
 .content-main {
@@ -44,5 +45,27 @@
 
 .content-main .content-area {
 	background-image: url("../images/wood_pattern.jpg");
-	height: 55	0px;
+	height: 55 0px;
+}
+
+.content-main .nav-bar-title {
+	clear: both;
+}
+
+.content-main .nav-bar-title img {
+	width: 30px;
+	height: 30px;
+	float: right;
+}
+
+.content-main .filter-nav-bar {
+	width: 20%;
+	float: right;
+	clear: both;
+}
+
+.control-group .btn-icon {
+	width: 30px;
+	height: 30px;
+	padding: 0px;
 }

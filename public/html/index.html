@@ -10,7 +10,7 @@
 <link href="../stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
-	<div class="container-fluid">
+	<div class="container">
 		<div class="content-top">
 			<div class="header">
 				<div class="row">
@@ -26,7 +26,8 @@
 						</div>
 					</div>
 					<div class="btn-group span2 option-bar">
-						<button class="btn">
+						<button class="btn" data-toggle="modal"
+							data-target="#add-task-modal">
 							<i class="icon-plus"></i>
 						</button>
 						<button class="btn">
@@ -59,7 +60,7 @@
 							</div>
 							<div id="collapseOne" class="accordion-body in"
 								style="height: auto;">
-								<div class="accordion-inner">
+								<div class="accordion-inner ">
 									<ul class="nav nav-pills">
 										<li class="active"><a href="#">最新动态</a></li>
 										<li><a href="#">所有任务</a></li>
@@ -83,22 +84,196 @@
 						<div class="accordion-group">
 							<div class="accordion-heading">
 								<a class="accordion-toggle" data-toggle="collapse"
-									data-parent="#accordion2" href="#collapseThree"> 其他 </a>
+									data-parent="#accordion2" href="#collapseThree"> 文档管理 </a>
 							</div>
 							<div id="collapseThree" class="accordion-body collapse"
 								style="height: 0px;">
-								<div class="accordion-inner">111</div>
+								<div class="accordion-inner">查看</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="span10 content-main">
-					<div class="nav-bar">我的任务</div>
-					<div class="content-area">2222</div>
+					<div class="nav-bar">
+						<div class="nav-bar-title">
+							所有任务 <img src="../images/icon_023.png" class="accordion-toggle"
+								data-toggle="collapse" data-target="#filter-panel">
+						</div>
+						<div id="filter-panel" class="accordion-body collapse ">
+							<div class="accordion-inner">添加过滤条件</div>
+						</div>
+					</div>
+					<div class="content-area">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>标题</th>
+									<th>日期</th>
+									<th>年代</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>爱情公寓</td>
+									<td>都市爱情喜剧</td>
+									<td>2010</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>邪恶力量</td>
+									<td>悬疑魔幻</td>
+									<td>2005</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>神探伽俐略</td>
+									<td>推理探案</td>
+									<td>2008</td>
+								</tr>
+								<tr>
+									<td colspan="4">
+										<div class="pagination">
+											<ul>
+												<li><a href="#">前一页</a></li>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">后一页</a></li>
+											</ul>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- add task -->
 
+	<div class="span8 hide modal fade in" id="add-task-modal">
+
+		<form class="form-horizontal">
+			<div class="modal-header">
+				添加任务<a class="close" data-dismiss="modal">×</a>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="input01">标题</label>
+				<div class="controls">
+					<input type="text" class="input-xlarge" id="input01">
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="optionsCheckbox">复选框</label>
+				<div class="controls">
+					<label class="checkbox"> <input type="checkbox"
+						id="optionsCheckbox" value="option1"> 选择异或不许—使用时最好给出选择的理由
+					</label>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="select01">难易度</label>
+				<div class="controls">
+					<select id="select01">
+						<option>请选择</option>
+						<option>简单</option>
+						<option>一般</option>
+						<option>困難</option>
+					</select>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="textarea">文本域</label>
+				<div class="controls">
+					<textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<div class="btn-group">
+						<img class="btn btn-icon" src="../images/icon_004.png"> <img
+							class="btn btn-icon" src="../images/icon_016.png"> <img
+							class="btn btn-icon" src="../images/icon_047.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-actions modal-footer">
+				<button type="submit" class="btn btn-primary">保存更改</button>
+				<button class="btn">取消</button>
+			</div>
+		</form>
+
+	</div>
 </body>
 </html>
